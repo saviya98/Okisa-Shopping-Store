@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+
+	<session-config>
+		<session-timeout>10</session-timeout>
+	</session-config>
+	<welcome-file-list>
+		<welcome-file>Login.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>com.store.servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/log</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Logout</servlet-name>
+		<servlet-class>com.store.servlet.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Logout</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Register</servlet-name>
+		<servlet-class>com.store.servlet.RegisterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Register</servlet-name>
+		<url-pattern>/reg</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Account</servlet-name>
+		<servlet-class>com.store.servlet.AccountServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Account</servlet-name>
+		<url-pattern>/acc</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>UpdateAcc</servlet-name>
+		<servlet-class>com.store.servlet.UpdateAccountServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateAcc</servlet-name>
+		<url-pattern>/upacc</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>UpdatePass</servlet-name>
+		<servlet-class>com.store.servlet.UpdatePasswordServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdatePass</servlet-name>
+		<url-pattern>/uppass</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>DeleteAcc</servlet-name>
+		<servlet-class>com.store.servlet.DeleteAccountServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteAcc</servlet-name>
+		<url-pattern>/del</url-pattern>
+	</servlet-mapping>
+
+</web-app>

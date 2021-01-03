@@ -1,0 +1,49 @@
+body {
+	background-color: white;
+}
+
+table{
+	 width: 100%;
+
+}
+
+th{
+	background-color: grey;
+  border-bottom: 3px solid grey;
+}
+
+}
+
+td{
+	font-size: 50px;
+	border-bottom: 3px solid grey;
+}
+
+h1{
+	text-align: center;
+}
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid grey;
+  padding: 10px;
+  margin-bottom: 10px;
+
+}
+
+input[type=text],input[type=password] {
+	width: 100%;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
